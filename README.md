@@ -32,8 +32,3 @@ For 1 lakh rows, I focused on efficient code:
 ### 👤 Author
 Sumit Kumar Roy | Aspiring Data Analyst | Kolkata
 ---
-END
-
-4. Click *Commit changes* -> *Commit directly*
-
-Once done, send me screenshot. Next step: I will show you how to upload your Jupyter notebook and chart image in 1 click.
