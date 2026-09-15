@@ -20,13 +20,22 @@ For 1 lakh rows, I focused on efficient code:
 ### 🛠️ Tech Stack
 `Python` `Pandas` `Scikit-Learn` `MySQL` `Power BI`
 
-### 🔜 Next Steps in this Repo
+### 🔜 Project Structure
 1.  `/data` - cleaned CSV (1 lakh rows)
-2.  `/sql` - MySQL analysis (AVG price by locality)
-3.  `/dashboard` - Power BI .pbix file
+2.  `/sql` - MySQL analysis (AVG price by locality, BHK analysis)
+3.  `/python` - Pyhton model (R2 = 0.73)
+4.  `/dashboard` - Power BI .pbix file
 
 ### 📈 Result Screenshot
 <img width="663" height="489" alt="Actual vs Predicted values" src="https://github.com/user-attachments/assets/b3aeb765-2a9f-4ee3-9369-89c7400b199e" />
+
+
+## Model Performance
+- R2 Score: 0.73
+- MAE: 13.7 Lakhs
+
+![Result Table] <img width="421" height="471" alt="Rsult_table" src="https://github.com/user-attachments/assets/1c2d1c60-4b8f-4a8d-bebd-dcc69155edef" />
+
 
 
 ### 👤 Author
