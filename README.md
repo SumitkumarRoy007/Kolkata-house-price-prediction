@@ -26,6 +26,34 @@ For 1 lakh rows, I focused on efficient code:
 3. `/python` - Python model (R2 = 0.73)
 4. `/dashboard` - Power BI dashboard - `Dashboard.png`
 
+### 💾 Sql queries
+ **Which top 10 City/Locality makes the most money?**
+
+select City,
+Locality,
+count(*) as Properties_sold ,
+round((sum(Final_Price)/10000000),0) as Revenue_Core, 
+round(avg(Area_sqft),2) as AVG_Area_sqft from project
+where Sales_Status = "Sold"
+group by City,Locality
+order by Revenue_Core limit 10;
+
+<img width="419" height="204" alt="Top10_city" src="https://github.com/user-attachments/assets/aa0ce327-cfab-4ce2-8778-a61c2ce5e031" />
+
+
+
+ **Marketing ROI query**
+ 
+select Lead_Source, Campaign ,
+count(*) as Leads,
+Sum(case when Sales_Status = "Sold" then 1 else 0 end) as Converted,
+round(sum(case when Sales_Status="Sold" then 1 else 0 end)*100/count(*),2) as Conversion_Pct 
+from project GROUP BY Lead_Source, Campaign
+ORDER BY Conversion_Pct DESC;
+
+<img width="417" height="206" alt="Marketing_ROI" src="https://github.com/user-attachments/assets/9816ac28-7bd4-454a-b604-9642541b29b4" />
+
+
 ### 📈 Result Screenshot
 <img width="663" height="489" alt="Actual vs Predicted values" src="https://github.com/user-attachments/assets/b3aeb765-2a9f-4ee3-9369-89c7400b199e" />
 
