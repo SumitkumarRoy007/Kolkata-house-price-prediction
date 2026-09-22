@@ -15,7 +15,7 @@ For 1 lakh rows, I focused on efficient code:
 - Used **vectorized Pandas** (no for-loops) - handles 1L rows in <2 sec
 - One-Hot Encoding for Locality
 - **Model:** Linear Regression
-- **Result:** R2 = 0.73, MAE = 6.8 Lakhs
+- **Result:** R2 = 0.73, MAE = 13.7 lakhs (₹13,72,885)
 
 ### 🛠️ Tech Stack
 `Python` `Pandas` `Scikit-Learn` `MySQL` `Power BI`
